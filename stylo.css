@@ -1,0 +1,1376 @@
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(white, white);
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+input[type=submit] {
+  background-color: #4c59af;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+input[type=submit]:hover {
+  background-color: #4549a0;
+}
+
+/* Create the toggle button */
+.toggle-button {
+display: inline-block;
+background-color: #4c4faf;
+color: white;
+padding: 10px;
+font-size: 10px;
+border: none;
+cursor: pointer;
+}
+
+
+/*LOGIN A REGISTRACE FORM*/
+.login-box {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box input[type="email"] {
+  width: 100%;
+  padding: 10px 3px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #333;
+}
+
+.login-box input[type="submit"] {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4c59af;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-box input[type="submit"]:hover {
+  background-color: #4c59af;
+}
+
+
+.ok_tlacitko {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+
+
+/*RECENZE--------------------------------------------------------------------------------------------------*/
+/* Style for the game container */
+.game-container {
+  background-color: #efe8e8d2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Style for the game title */
+.game-container h2 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #EEE;
+}
+
+/* Style for the game description */
+.game-container p {
+  color: #777;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style for the reviews section */
+/* Styles for the review container */
+.review-container {
+  display: none; 
+}
+
+/* Styles for each individual review */
+.review {
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+}
+
+.review-label-nick, .review-label-rev, .review-label-rat {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.review-value-nick {
+  color: black;
+  font-size: 19px;
+  font-family: Arial, sans-serif;
+}
+
+.review-value-rev {
+  display: block;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+
+.review-value-rat {
+  color: #FFC107;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* Style for the reviews toggle button */
+.show-reviews-toggle-button {
+  background-color: #8689e2;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out;
+  text-shadow: 1px 1px #333;
+}
+
+.show-reviews-toggle-button:hover {
+  background-color: #333;
+}
+
+/* Style for the review form toggle button */
+.review-form-toggle-button {
+  background-color: #8689e2;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out;
+  text-shadow: 1px 1px #333;
+}
+
+.review-form-toggle-button:hover {
+  background-color: #333;
+}
+
+/* Style for the review form */
+.review-form {
+  margin-top: 20px;
+}
+
+.review-form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+.review-form select, .review-form textarea {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  padding: 5px;
+  width: 100%;
+  color: #555;
+}
+
+.review-form select {
+  margin-bottom: 10px;
+}
+
+.review-form input[type="submit"] {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out;
+  text-shadow: 1px 1px #000;
+}
+
+.review-form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+/*GAME RANK-------------------------------------------------------------------------------------------------*/
+#game-rank {
+  font-family: 'Montserrat', sans-serif; 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#game-rank li {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out; 
+}
+
+#game-rank li:hover {
+  background-color: #e6e6e6; 
+}
+
+
+/* Add styles for other rating classes */
+
+.game-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.review-count {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+
+  /* Style for number squares */
+  .number-square {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #000000;
+    margin-right: 10px;
+  }
+
+  /* Color coding for number squares */
+  .rating-1 .number-square {
+    background-color: #FF0000; /* 1-2.9 */
+  }
+
+  .rating-3 .number-square {
+    background-color: #FF4000; /* 3-3.9 */
+  }
+
+  .rating-4 .number-square {
+    background-color: #FF8000; /* 4-4.9 */
+  }
+
+  .rating-5 .number-square {
+    background-color: #FFBF00; /* 5-5.9 */
+  }
+
+  .rating-6 .number-square {
+    background-color: #FFFF00; /* 6-6.9 */
+  }
+
+  .rating-7 .number-square {
+    background-color: #BFFF00; /* 7-7.9 */
+  }
+
+  .rating-8 .number-square {
+    background-color: #80FF00; /* 8-8.9 */
+  }
+
+  .rating-9 .number-square {
+    background-color: #40FF00; /* 9-9.9 */
+  }
+
+  .rating-10 .number-square {
+    background-color: #00FF00; /* 10 */
+  }
+
+  .rank-number {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    color: #000000;
+    margin-right: 10px;
+    background: linear-gradient(135deg, #f5a623 0%,#f8e71c 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  
+/*NAVBAR-------------------------------------------------------------------------------------------------*/
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #dfe1dc;
+  color: #333;
+  padding: 10px 20px; 
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  nav ul li:hover ul {
+    display: block;
+  }
+  
+  nav ul ul {
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    display: none;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav ul ul li {
+    margin: 0;
+  }
+  
+  nav ul ul a {
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav ul ul a:hover {
+    background-color: #5f5f5f;
+    color: #fff;
+  }
+  
+  nav button {
+    background-color: #5f5f5f;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav button:hover {
+    background-color: #333;
+  }
+  
+  .logo {
+    font-size: 24px; 
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #muj-profil {
+    float: right;
+  }
+
+
+  /*ADDING CSS-------------------------------------------------------------------------------------------------*/
+  .game-info-value {
+    background-color: #4c4faf;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .game-popis {
+    background-color: #F7EEDB;
+    border: 2px solid #E7BDBD;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .game-popis-value {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+  }
+  
+
+.rating-number {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.table-container {
+  display: inline-block;
+  margin-right: 55px;
+  margin-left: 55px;
+  vertical-align: top;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.table-container:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#new-game-button {
+  background-color: #1E90FF;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#new-game-button:hover {
+  background-color: #0077B6;
+}
+
+#new-game-form {
+  display: none;
+  width: 100%;
+  max-width: 600px;
+}
+
+#new-game-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#new-game-form input,
+#new-game-form select,
+#new-game-form textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+#new-game-form input:focus,
+#new-game-form select:focus,
+#new-game-form textarea:focus {
+  border-color: #1E90FF;
+}
+
+#new-game-form select {
+  height: auto;
+}
+
+#new-game-form input[type="submit"] {
+  background-color: #1E90FF;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#new-game-form input[type="submit"]:hover {
+  background-color: #0077B6;
+}
+
+
+.all-data-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all-data-container form {
+  display: flex;
+  align-items: center;
+}
+
+.all-data-container form label {
+  margin-right: 10px;
+}
+
+.all-data-container form input[type="text"] {
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.all-data-container form button {
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.all-data-container form button:hover {
+  background-color: #1E90FF;
+}
+
+/*SPRAVA UZIVATELU---------------------------------------------------------------------------------*/
+
+.new-user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#new-user-button {
+  background-color: #1E90FF;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#new-user-button:hover {
+  background-color: #0077B6;
+}
+
+.new-user-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.new-user-container label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.new-user-container input,
+.new-user-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.new-user-container input[type="submit"] {
+  background-color: #2196F3;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-user-container input[type="submit"]:hover {
+  background-color: #0D47A1;
+}
+
+.user-table-container {
+  margin: 0 auto;
+  max-width: 1450px;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+
+/*SPRAVA HER-------------------------------------------------------------------------------------------*/
+.game-table-container {
+  margin: 0 auto;
+  max-width: 1450px;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+.review-value-rat {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.high-rating {
+  color: green;
+}
+
+.medium-rating {
+  color: orange;
+}
+
+.low-rating {
+  color: red;
+}
+
+
+.game {
+  margin: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.game-title {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.expand-toggle-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.expand-toggle-button:hover {
+  background-color: #2e2e2e;
+}
+
+
+/*PROFIL--------------------------------------------------------------------------------------------------*/
+.user-data {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.user-data h2 {
+  margin-top: 0px;
+}
+
+.user-data table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-data th, .user-data td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-data th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.user-data td input[type="text"], .user-data td input[type="password"], .user-data td input[type="email"]  {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f7f7f7;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.user-data td input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.user-data td input[type="submit"]:hover {
+  background-color: #2c3e50;
+}
+
+.user-data tr:last-child td {
+  border-bottom: none;
+}
+
+.user-data button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.user-data button[type="submit"]:hover {
+  background-color: #333;
+}
+
+
+
+
+
+.review-table {
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+.review-table th, .review-table td {
+  text-align: center;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.review-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.review-table textarea {
+  width: 80%;
+  min-height: 50px;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.review-table select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.review-table input[type="submit"] {
+  padding: 10px 30px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.review-table input[type="submit"]:hover {
+  background-color: #006F8F;
+}
+
+
+.review-table .toggle-button {
+  background-color: #ddd;
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.review-table .toggle-button:hover {
+  background-color: #bbb;
+}
+
+.review-table table {
+  width: 100%;
+}
+
+.review-table table thead th:last-child, .review-table table tbody td:last-child {
+  text-align: center;
+}
+
+.review-table table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+.search-form select {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-form button[type="submit"] {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .search-form button[type="submit"] {
+    margin: 10px 0 0 0;
+  }
+}
+
+/*FOOTER*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-image: linear-gradient(to bottom right, white);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 150px;
+}
+
+
+.action {
+  display: block;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 13rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.action:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.action img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #dfe1dc;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+footer a {
+  color: #000000;
+  margin: 0 10px; 
+}
+
+footer a:hover {
+  text-decoration: underline; 
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  bottom: 0;
+  width: 80%;
+
+}
+
+
+
+
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 200px; 
+}
+#about {
+  top: 500px;
+}
+
+#heading {
+  margin-top: 50px;
+}
+
+/* Style the heading */
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* Style the content */
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Style the image */
+.about-content img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the text */
+.about-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  max-width: 500px;
+}
+
+.logo {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url("logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+
+.success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.intro-kontakt {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about-content-kontakt {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-content-kontakt img {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.about-content-kontakt p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.about-content-kontakt h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: inline-block;
+  text-align: left;
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+  height: 450px;
+  }
+  
+  .contact-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #2c3e50;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 96%;
+  background-color: #dfe1dc;
+  }
+
+  .contact-form textarea {
+    height: 48px;
+    width: 96%; 
+    resize: none;
+  }
+  
+  .contact-form button[type="submit"] {
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+  background-color: #34495e;
+  }
+
+
+
+
+
+
+
+.alert {
+  background-color: #f44336; /* Red */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.alert.success {
+  background-color: #4CAF50; /* Red */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;}
+
+  .logout-btn {
+    background-color: white;
+    color: #df4b4b;
+    border: 1px solid #df4b4b;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #df4b4b;
+    color: #ffffff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logout-btn {
+      display: none;
+    }
+  }
+
+  .reset-password-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .reset-password-box {
+    max-width: 400px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reset-password-box h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .user-box {
+    margin-bottom: 20px;
+  }
+  
+  .user-box label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .user-box input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 16px;
+  }
+  
+  .user-box input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4c59af;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .user-box input[type="submit"]:hover {
+    background-color: #4c59af;
+  }
+  
+
+  .alert.reset {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f44336; /* Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .alert.success.reset {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
