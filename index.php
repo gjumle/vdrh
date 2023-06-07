@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="stylo.css">
   </head>
   <body>
-      <!-- NAVIGAČNÍ LIŠTA -->
+      <!-- NAVIGAČNÍ LIŠTA -->C:\GitHub\vdrh\index.phpC:\GitHub\vdrh\index.php
   <nav>
   <a href="index.php" class="logo">VDRH</a>
   <div class="menu">
